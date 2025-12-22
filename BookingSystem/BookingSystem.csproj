@@ -22,12 +22,10 @@
 
   <ItemGroup>
     <Folder Include="Common\" />
+    <Folder Include="Data\Services\" />
+    <Folder Include="Interfaces\IServices\" />
     <Folder Include="Models\" />
     <Folder Include="Dtos\" />
-    <Folder Include="Repositories\IRepository\" />
-    <Folder Include="Repositories\RepositoryImplementation\" />
-    <Folder Include="Services\IService\" />
-    <Folder Include="Services\ServiceImplementation\" />
   </ItemGroup>
 
 </Project>

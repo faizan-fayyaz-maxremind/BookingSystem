@@ -1,3 +1,6 @@
+using BookingSystem.Data.Repositories;
+using BookingSystem.Interfaces.IRepositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,6 +27,7 @@ builder.Services.AddSwaggerGen();
 //    });
 //});
 
+builder.Services.AddScoped(typeof(IGenericRepo<>), typeof(GenericRepo<>));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
