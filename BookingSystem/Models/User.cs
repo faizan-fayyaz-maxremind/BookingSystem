@@ -18,6 +18,7 @@ public partial class User
     public bool IsActive { get; set; }
 
     public DateTime CreatedAt { get; set; }
+    public string PasswordHash { get; set; }
 
     public virtual ICollection<Business> Businesses { get; set; } = new List<Business>();
 }
